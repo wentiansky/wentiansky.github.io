@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#skeleton {
+  background-color: #fff;
+}
+
+ #skeleton .skeleton-item {
+  background: linear-gradient(90deg, #f2f2f2 25%, #e6e6e6 37%, #f2f2f2 63%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(25%, #f2f2f2), color-stop(37%, #e6e6e6), color-stop(63%, #f2f2f2));
+  background-size: 400% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+  -webkit-animation: skeleton-loading 1.4s ease infinite;
+}
+
+#skeleton .swapper {
+  width: 100%;
+  padding: 0 16px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+#skeleton .content {
+  padding: 6px;
+}
+
+#skeleton .row {
+  display: flex;
+  display: -webkit-flex;
+}
+
+#skeleton .img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#skeleton .content-item {
+  position: relative;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  -webkit-flex: 1;
+  height: 140px;
+  margin-bottom: 6px;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+}
+
+#skeleton .text-item {
+  height: 16px;
+  margin-top: 16px;
+}
+
+#skeleton .title {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
